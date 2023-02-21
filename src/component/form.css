@@ -1,0 +1,69 @@
+.my-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  animation: fadeInUp 0.5s ease-out;
+}
+
+.my-input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  width: 600px;
+  height: 300px;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+  font-size: 16px;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.my-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.my-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: #1c87c9;
+  color: #fff;
+  margin-right: 0.5rem;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.my-button:hover {
+  background-color: #0c5ca6;
+  cursor: pointer;
+  animation: pulse 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
