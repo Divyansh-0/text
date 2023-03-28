@@ -4,7 +4,6 @@ import Form from "./component/Form";
 function App() {
   return (
     <>
-      Hello
       <Form />
     </>
   );

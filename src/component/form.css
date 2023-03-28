@@ -1,20 +1,38 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  background: linear-gradient(to bottom right, #6dd5fa, #2980b9);
+  color: #fff;
+  padding-top: 20px;
+}
+
 .my-form {
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-
   animation: fadeInUp 0.5s ease-out;
 }
 
 .my-input {
-  padding: 0.5rem;
-  border: 1px solid #ccc;
-  width: 600px;
+  padding: 1rem;
+  border: none;
+  width: 100%;
   height: 300px;
   border-radius: 0.25rem;
   margin-bottom: 1rem;
-  font-size: 16px;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #333;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   animation: fadeIn 0.5s ease-out;
+}
+
+.label {
+  display: flex;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
 }
 
 .my-buttons {
@@ -24,17 +42,17 @@
 }
 
 .my-button {
-  padding: 0.5rem 1rem;
+  padding: 1rem 2rem;
   border: none;
   border-radius: 0.25rem;
-  background-color: #1c87c9;
+  background-color: #2980b9;
   color: #fff;
   margin-right: 0.5rem;
   animation: fadeIn 0.5s ease-out;
 }
 
 .my-button:hover {
-  background-color: #0c5ca6;
+  background-color: #6dd5fa;
   cursor: pointer;
   animation: pulse 0.5s ease-out;
 }
